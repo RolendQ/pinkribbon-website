@@ -1,47 +1,76 @@
 import React from 'react'
 import './queries.css'
 
+const headers = [
+  {
+    name: 'VrId'
+  },
+  {
+    name: 'Rx Otc Schedule'
+  },
+  {
+    name: 'Generic Name'
+  },
+  {
+    name: 'Product Name'
+  },
+  {
+    name: 'Route'
+  },
+  {
+    name: 'Strength'
+  },
+  {
+    name: 'Dosage Form'
+  },
+  {
+    name: 'Labeler'
+  },
+  {
+    name: 'Market Status'
+  },
+  {
+    name: 'Product Image'
+  },
+  {
+    name: 'Ndc'
+  },
+  {
+    name: 'How Supplied'
+  },
+  {
+    name: 'Vr Brief Name'
+  },
+  {
+    name: 'Awp'
+  },
+]
+
+const items = new Array(140).fill(null);
+
 const Queries = () => {
   return (
     <div className='queries__container'>
       <div className='queries__grid'>
-        <div className='queries__header'>
-          Header 1
-        </div>
-        <div className='queries__header'>
-          Header 2
-        </div>
-        <div className='queries__header'>
-          Header 3
-        </div>
-        <div className='queries__header'>
-          Header 4
-        </div>
-        <div className='queries__content'>
-          Content 1
-        </div>
-        <div className='queries__content'>
-          Content 2
-        </div>
-        <div className='queries__content'>
-          Content 3
-        </div>
-        <div className='queries__content'>
-          Content 4
-        </div>
-        <div className='queries__content'>
-          Content 5
-        </div>
-        <div className='queries__content'>
-          Content 6
-        </div>
-        <div className='queries__content'>
-          Content 7
-        </div>
-        <div className='queries__content'>
-          Content 8
-        </div>
+
+        {
+          headers.map(({name}, index) => {
+            return (
+              <div className='queries__header'>
+                {name}
+              </div>
+            )
+          })
+        }
+
+        {items.map((_, idx) => <div className='queries__content'>Content</div>)}
       </div>
+
+
+      <div className='queries__more__btn'>
+        See more
+      </div>
+      
     </div>
   )
 }

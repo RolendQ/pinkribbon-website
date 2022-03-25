@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 import './contact.css'
 
 const Contact = () => {
+  const [active, setActive] = useState(0);
+
+  if (active === 1) {
   return (
     <div className='contact__container'>
+        <button
+            type="button"
+            onClick={() => setActive(0)}
+          >
+            Close
+        </button>
         <h3> Contact Us </h3>
 
         <form className='contact__form'>
@@ -23,6 +32,18 @@ const Contact = () => {
             </form>
     </div>
   )
+  } else {
+    return (
+      <div className='contact__container'>
+        <button
+            type="button"
+            onClick={() => setActive(1)}
+          >
+            Open Contact Us
+        </button>
+      </div>
+    )
+  }
 }
 
 export default Contact

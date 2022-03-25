@@ -1,17 +1,35 @@
 :root{
-    --color-1: #27709b;
-    --color-2: #5433af;
+    --color-1: #88cfdb;
+    --color-2: #5c88a1;
+    --color-3: #1e5079;
+    --color-4: lightgray;
+    --color-5: #969696;
+    --color-6: #585858;
+    --color-7: rgb(69, 133, 96);
 }
 
 body {
-    background: lightblue;
+    background: var(--color-4);
     color: darkblue;
     display: flex;
     flex-direction: column;
 }
 
-.main__container {
+.topbar__container {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    background-color: var(--color-2);
+    border-radius: 0.7rem;
 }
+
+.account__btn {
+    float: right;
+    color: var(--color-4);
+    background-color: var(--color-3);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+}
+
