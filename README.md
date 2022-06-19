@@ -1,4 +1,9 @@
+# Roland's comments:
+# Cd to C:\Users\rolan\Desktop\Boston Meditech\pinkribbon\website-v1 then run 'npm start'
+
+
 Need: npm install react-icons --save
+Also: npm i use-local-storage
 
 # Getting Started with Create React App
 

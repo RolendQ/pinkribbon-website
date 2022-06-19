@@ -1,33 +1,33 @@
 .queries__container {
-    background-color: lightgray;
     margin-top: 1rem;
 }
 
 .queries__grid {
+    background-color: var(--light-text);
     display: grid;
     grid-template-columns: repeat(14, 1fr);
 }
 
 .queries__header {
-    background-color: var(--color-7);
+    background-color: var(--menu-bg);
     text-align: center;
     font-size: 0.8rem;
-    color: var(--color-4);
-    border: 2px solid var(--color-4);
+    color: var(--light-text);
+    border: 2px solid var(--light-text);
     padding: 0.5rem 0.5rem 0.3rem 0.5rem;
 }
 
 .queries__content {
     margin-top: 0.2rem;
     padding: 0.5rem 0.75rem;
-    color: var(--color-7);
-    border: 2px solid var(--color-7);
+    color: var(--dark-text);
+    border: 2px solid var(--dark-text);
 }
 
 .queries__more__btn {
     width: max-content;
-    color: var(--color-4);
-    background-color: var(--color-7);
+    color: var(--light-text);
+    background-color: var(--diff-btn);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 1.2rem;

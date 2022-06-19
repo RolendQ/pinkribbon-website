@@ -1,35 +1,61 @@
 :root{
-    --color-1: #88cfdb;
-    --color-2: #5c88a1;
-    --color-3: #1e5079;
-    --color-4: lightgray;
-    --color-5: #969696;
-    --color-6: #585858;
-    --color-7: rgb(69, 133, 96);
+    /* Theme 1 */
+    --page-bg: #ffffff;
+    --item-bg: #f9d9d9;
+    --menu-bg: #bfa593;
+    --default-color: #1e5079;
+    --light-text: #ffffff;
+    --search-btn: #cccccc;
+    --dark-text: #585858;
+    --diff-btn: #fc8474;
+    --text-bg: #585858;
+    /* Theme 2 */
+}
+[data-theme='dark'] {
+    --page-bg: #303135;
+    --item-bg: #cae8ec;
+    --menu-bg: #4d6f79;
+    --diff-btn: #4f586b;
+    --text-bg: #ffffff;
 }
 
 body {
-    background: var(--color-4);
-    color: darkblue;
     display: flex;
     flex-direction: column;
+}
+
+.page {
+    background-color: var(--page-bg);
 }
 
 .topbar__container {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    background-color: var(--color-2);
+    background-color: var(--menu-bg);
     border-radius: 0.7rem;
 }
 
 .account__btn {
     float: right;
-    color: var(--color-4);
-    background-color: var(--color-3);
+    color: var(--light-text);
+    background-color: var(--diff-btn);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 1.2rem;
     margin-top: 0.6rem;
+}
+
+.theme__btn {
+    background-color: var(--diff-btn);
+    color: var(--light-text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+}
+
+div {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 

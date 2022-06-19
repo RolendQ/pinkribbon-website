@@ -6,10 +6,11 @@ const Contact = () => {
 
   if (active === 1) {
   return (
-    <div className='contact__container'>
+    <div className='contact__container' style={{width: "20rem"}}>
         <button
             type="button"
             onClick={() => setActive(0)}
+            className="contact__button"
           >
             Close
         </button>
@@ -34,10 +35,11 @@ const Contact = () => {
   )
   } else {
     return (
-      <div className='contact__container'>
+      <div className='contact__container' style={{width: "7.5rem"}}>
         <button
             type="button"
             onClick={() => setActive(1)}
+            className="contact__button"
           >
             Open Contact Us
         </button>

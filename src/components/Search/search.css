@@ -8,8 +8,8 @@
 }
 
 .search__field {
-    background-color: var(--color-4);
-    color: var(--color-5);
+    background-color: var(--light-text);
+    color: var(--dark-text);
     width: 20rem;
     padding-left: 1rem;
     padding-top: 0.5rem;
@@ -17,8 +17,8 @@
 }
 
 .search__submit {
-    background-color: var(--color-5);
-    color: var(--color-6);
+    background-color: var(--search-btn);
+    color: var(--dark-text);
     padding: 0 1.3rem;
     border-radius: 0.5rem;
     font-size: 2rem;

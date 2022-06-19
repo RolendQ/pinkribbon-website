@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: 0rem;
-    margin-top: 3.5rem;
-    background-color: var(--color-2);
+    margin-top: 0.5rem;
+    background-color: var(--menu-bg);
     border-radius: 0.7rem;
 }
 
 .gallery__title {
-    color: var(--color-4);
+    color: var(--light-text);
     padding-left: 1rem;
 }
 
@@ -23,9 +23,23 @@
 .gallery__box {
     padding: 0.75rem 1.2rem;
     border-radius: 0.5rem;
-    background-color: var(--color-1);
+    background-color: var(--item-bg);
     cursor: pointer;
     width: 12.5rem;
-    height: 10rem;
+    height: 11rem;
     text-align: center;
+}
+
+.gallery__entry {
+    color: var(--dark-text);
+    font-size: 1.2rem;
+}
+
+.gallery__box__img {
+    margin-left: -0.7rem;
+    width:  13rem;
+    height:  9rem;
+    border-style: double;
+    border-width: 0.5rem;
+    border-color: var(--diff-btn);
 }

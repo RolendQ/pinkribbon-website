@@ -8,14 +8,23 @@ import Contact from './components/Contact/Contact'
 import Gallery from './components/Gallery/Gallery'
 import Axios from "axios";
 
+import useLocalStorage from 'use-local-storage'
+
 const App = () => {
   useEffect(()=> {
     Axios.get('http://localhost:3001/get').then((response) => {
       console.log(response.data);
     });
   }, []);
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }
   return (
-    <>
+    <div className='page' data-theme={theme}>
       <Header />
       <div className='topbar__container'>
         <Search />
@@ -24,13 +33,16 @@ const App = () => {
       <div className='account__btn'>
         My Account
       </div>
+      <button className='theme__btn' onClick={switchTheme}>
+        {theme === 'light' ? 'Light' : 'Dark'} Mode
+      </button>
       <Gallery />
       <div>
         <Queries />
       </div>
       <Footer />
       <Contact />
-    </>
+    </div>
   )
 }
 
