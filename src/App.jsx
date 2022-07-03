@@ -6,16 +6,11 @@ import Queries from './components/Queries/Queries'
 import Search from './components/Search/Search'
 import Contact from './components/Contact/Contact'
 import Gallery from './components/Gallery/Gallery'
-import Axios from "axios";
+
 
 import useLocalStorage from 'use-local-storage'
 
 const App = () => {
-  useEffect(()=> {
-    Axios.get('http://localhost:3001/get').then((response) => {
-      console.log(response.data);
-    });
-  }, []);
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
