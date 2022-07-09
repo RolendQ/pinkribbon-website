@@ -5,6 +5,8 @@
     margin-top: 0.5rem;
     background-color: var(--menu-bg);
     border-radius: 0.7rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .gallery__title {
@@ -17,6 +19,7 @@
     gap: 0.5rem;
     flex-direction: row;
     padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -25,20 +28,20 @@
     border-radius: 0.5rem;
     background-color: var(--item-bg);
     cursor: pointer;
-    width: 12.5rem;
     height: 11rem;
+    min-width: 10rem;
     text-align: center;
 }
 
 .gallery__entry {
     color: var(--dark-text);
-    font-size: 1.2rem;
+    font-size: 1.45rem;
 }
 
 .gallery__box__img {
     margin-left: -0.7rem;
-    width:  13rem;
-    height:  9rem;
+    width: auto;
+    height:  80%;
     border-style: double;
     border-width: 0.5rem;
     border-color: var(--diff-btn);

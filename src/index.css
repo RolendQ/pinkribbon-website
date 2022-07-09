@@ -22,6 +22,8 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0rem;
 }
 
 .page {
@@ -34,6 +36,8 @@ body {
     gap: 3rem;
     background-color: var(--menu-bg);
     border-radius: 0.7rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .account__btn {
@@ -44,6 +48,7 @@ body {
     border-radius: 0.5rem;
     font-size: 1.2rem;
     margin-top: 0.6rem;
+    margin-right: 0.75rem;
 }
 
 .theme__btn {
@@ -53,6 +58,7 @@ body {
     border-radius: 0.5rem;
     font-size: 1.2rem;
     margin-top: 0.6rem;
+    margin-left: 0.75rem;
 }
 
 div {

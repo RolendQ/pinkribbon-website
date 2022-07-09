@@ -1,5 +1,7 @@
 .queries__container {
     margin-top: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .queries__grid {
@@ -13,15 +15,14 @@
     text-align: center;
     font-size: 0.8rem;
     color: var(--light-text);
-    border: 2px solid var(--light-text);
+    border: 2px solid var(--page-bg);
     padding: 0.5rem 0.5rem 0.3rem 0.5rem;
 }
 
 .queries__content {
-    margin-top: 0.2rem;
     padding: 0.5rem 0.75rem;
     color: var(--dark-text);
-    border: 2px solid var(--dark-text);
+    border: 3px solid var(--dark-text);
 }
 
 .queries__more__btn {
